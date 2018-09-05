@@ -1,0 +1,279 @@
+page{
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+}
+.container{
+    background: #f4f4f4;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.userinfo {
+	display: flex;
+	flex-direction: column;
+    padding:40rpx 0;
+	align-items: center;
+	background: #333;
+    width: 750rpx;
+}
+
+.userinfo-avatar {
+	width: 160rpx;
+	height: 160rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  color: #FFF;
+}
+.profile-info{
+    width: 100%;
+    height: 280rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30.25rpx;
+    background: #333;
+}
+
+.profile-info .avatar{
+    height: 148rpx;
+    width: 148rpx;
+    border-radius: 50%;
+}
+
+.profile-info .info{
+    flex: 1;
+    height: 85rpx;
+    padding-left: 31.25rpx;
+}
+
+.profile-info .name{
+    display: block;
+    height: 45rpx;
+    line-height: 45rpx;
+    color: #fff;
+    font-size: 37.5rpx;
+    margin-bottom: 10rpx;
+}
+
+.profile-info .level{
+    display: block;
+    height: 30rpx;
+    line-height: 30rpx;
+    margin-bottom: 10rpx;
+    color: #7f7f7f;
+    font-size: 30rpx;
+}
+
+.user-menu{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.user-menu .item{
+    float: left;
+    width: 33.33333%;
+    height: 187.5rpx;
+    border-right: 1px solid rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    text-align: center;
+}
+
+.user-menu .item .a{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-menu .item.no-border {
+    border-right: 0;
+}
+
+.user-menu .item.item-bottom {
+    border-bottom: none;
+}
+
+.user-menu .icon{
+    margin: 0 auto;
+    display: block;
+    height: 52.803rpx;
+    width: 52.803rpx;
+    margin-bottom: 16rpx;
+}
+
+.user-menu .icon.order{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -437.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/1301238781135a.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.coupon{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -62.4997rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/1323486196e3e.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.daka{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -187.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/125812441e6709.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+
+.user-menu .icon.gift{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -187.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/125812441e6709.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+.user-menu .icon.collect{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -187.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/1303216991e85b.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+.user-menu .icon.footprint{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -187.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/13091846488f9f.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.address{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 0 no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/13110547069093.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.security{
+    background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -500rpx no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.kefu{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -312.5rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/13130580960575.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.help{
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/131932792e5b97.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+
+.user-menu .icon.feedback{
+    /*background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/ucenter-sdf6a55ee56-f2c2b9c2f0.png) 0 -125rpx no-repeat;*/
+    background: url(http://pc5e9xq7v.bkt.clouddn.com//1/20180810/132150558f2ee8.png) center no-repeat;
+    background-size: 52.803rpx;
+}
+.user-menu .icon.phone{
+    background: url(http://p9kyr79ne.bkt.clouddn.com/1/20180531/15011540ebe21.png) no-repeat;
+    background-size: 52.803rpx;
+}
+
+
+.user-menu .txt{
+    display: block;
+    height: 24rpx;
+    width: 100%;
+    font-size: 24rpx;
+    color:#333;
+}
+
+.logout{
+    margin-top: 50rpx;
+    height: 101rpx;
+    width: 100%;
+    line-height: 101rpx;
+    text-align: center;
+    background: #fff;
+    color: #333;
+    font-size: 30rpx;
+}
+
+.service {
+  position: static;
+  background-color: transparent;
+  color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: left;
+  line-height: normal;
+  display: inline;
+}
+
+
+/*new add*/
+
+.cellView {
+    height: 100rpx;
+    border-bottom: 2rpx solid #f4f4f4;
+    background-color: #fff;
+}
+
+.cellView .cell {
+    padding: 30rpx;
+}
+
+.cellView .cell image {
+    margin-right: 10rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.cellView .cell text {
+    font-size: 28rpx;
+    line-height: 32rpx;
+    letter-spacing: 2rpx;
+    color: #545454;
+    margin-right: 10rpx;
+    display: -webkit-box;
+}
+
+.cellView .cell .arrow {
+    position: relative;
+}
+
+.cellView .cell .arrow:after {
+    content: ' ';
+    height: 12rpx;
+    width: 12rpx;
+    border-width: 4rpx 4rpx 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    transform: matrix(.71,.71,-0.71,.71,0,0);
+    top: -4rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -8rpx;
+    right: 4rpx;
+}
+
+.contact {
+    line-height: 25px;
+    border: 0;
+    text-align: left;
+    background-color: #fff;
+}
+
+.contact::after {
+    content: none;
+}
+.box-flex-1 {
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.item-flex {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}

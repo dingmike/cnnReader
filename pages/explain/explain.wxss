@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100rpx;
+}
+
+.classbtn {
+    position: fixed;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background-color: #58b406;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 100rpx;
+    opacity: 0.6;
+}
+
+.container image {
+    width: 100%;
+    margin-top: auto;
+}
+.explain-content{
+    width: 86%;
+    margin: 0 auto;
+}

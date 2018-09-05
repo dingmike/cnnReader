@@ -1,0 +1,108 @@
+page {
+    background-color: #fff;
+}
+
+.sceneImg image {
+    width: 100%;
+    height: 300rpx;
+}
+
+.classbtn {
+    position: fixed;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    background-color: #58b406;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 100rpx;
+}
+
+.today-content {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    height: 85%;
+    position: absolute;
+    border-radius: 5px 5px 5px 5px;
+    vertical-align: middle;
+}
+
+.today-content-title {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40rpx;
+    font-size: 15px;
+}
+
+.text-height {
+    height:55%;
+    padding-bottom:100rpx;
+    line-height:2;
+}
+
+/*.top {
+    height: 28%;
+}*/
+
+.today-content-sound {
+    border: 1px solid #c0c0bf;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40rpx;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 20px 20px;
+    height: 80rpx;
+    vertical-align: middle;
+}
+
+.today-sound {
+    align-content: center;
+    margin-top: 20rpx;
+}
+
+.today-sound-control image {
+    width: 70rpx;
+    height: 70rpx;
+    vertical-align: middle;
+    margin-top: 5rpx;
+    margin-left: 10rpx;
+}
+
+.today-sound-time {
+    font-size: 13px;
+    line-height: 80rpx;
+    margin-right: 20rpx;
+}
+
+.today-sound-process {
+    width: 90%;
+    margin-left: 10rpx;
+}
+
+.today-content-jp {
+    font-size: 14px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20rpx;
+}
+
+.today-content-ch {
+    font-size: 14px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20rpx;
+    padding-bottom: 20rpx;
+    color: black;
+}
+
+/*new add*/
+.video-content{
+
+}
+.video-cell{
+    width:100%;
+    height: 200px;
+}
