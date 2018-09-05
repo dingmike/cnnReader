@@ -1,6 +1,0 @@
-{
-    "usingComponents": {
-        "scrollView": "../../component/scrollView/scrollView",
-        "tabBar": "../../component/tabBar/tabBar"
-    }
-}
