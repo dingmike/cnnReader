@@ -8,6 +8,7 @@
     "pages/signres/signres",
     "pages/orale/orale-detail/orale-detail",
     "pages/orale/orale-extend/orale-extend",
+    "pages/ucenter/my-card/my-card",
     "pages/submitInfo/submitInfo",
     "pages/ucenter/index/index"
   ],
