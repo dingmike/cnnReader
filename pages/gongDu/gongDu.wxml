@@ -38,19 +38,16 @@
             </view>
         </wxc-panel>
 
-
         <wxc-panel border="{{false}}">
             <view class="enrollment">
                 <view class="enrollment-nums">
                     <text style="color:#000">{{studyUserNums}}人报名</text>
                 </view>
                 <view class="enrollment-images">
-                    <image src="{{userInfo.avatarUrl}}" wx:if="{{avaData}}"></image>
-                    <image src="{{item.avatar}}" wx:for="{{studyUser}}" wx:key="{{item}}"></image>
+                    <image src="{{userInfo.avatar}}" wx:if="{{avaData}}"></image>
+                    <image src="{{item.avatar}}" wx:if="{{userInfo.avatar!=item.avatar}}" wx:for="{{studyUser}}" wx:key="{{item}}"></image>
                 </view>
-
             </view>
-
         </wxc-panel>
         <!--支付弹窗 start-->
         <view animation="{{animationData}}" class="signUp" wx:if="{{showModalStatus}}">
@@ -61,7 +58,7 @@
                 <radio checked="checked" class="info-radio"></radio>
                 <view class="info-text">
                     <text class="info-title">约定模式</text>
-                    <text bindtap="bindExplain" class="info-info" decode="true" space="true">我已悉知活动详情，立即加入养成计划！</text>
+                    <text bindtap="bindExplain" class="info-info" decode="true" space="true">我已知晓活动详情，立即加入养成计划！</text>
                 </view>
             </view>
             <view style="width:90%;font-size:12px">
