@@ -49,7 +49,7 @@ Page({
         var i = e.globalData.oraleCountent, s = this;
         if (t.setFillStyle("white"), t.fillRect(0, 0, this.data.phoneWidth, this.data.phoneHeight), 
         // t.drawImage(i.sceneimg, 0, 0, this.data.phoneWidth, .8 * this.data.phoneHeight),
-        t.drawImage('/static/image/logos/1-3.jpg', 0, 0, this.data.phoneWidth, .8 * this.data.phoneHeight),
+        t.drawImage("/static/image/logos/123.jpg", 0, 0, this.data.phoneWidth, .8 * this.data.phoneHeight),
         t.drawImage("/static/image/icon/code.jpg", this.data.phoneWidth - 100, .7 * this.data.phoneHeight, 80, 80),
         wx.downloadFile({
             url: o.avatar,
@@ -68,11 +68,9 @@ Page({
             fileType: "png",
             canvasId: "myCanvas",
             success: function(t) {
-                console.log(t.tempFilePath);
                 wx.saveImageToPhotosAlbum({
                     filePath: t.tempFilePath,
                     success: function(t) {
-                        console.log(t);
                         wx.showToast({
                             title: "已保存到相册"
                         });

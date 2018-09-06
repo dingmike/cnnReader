@@ -4,21 +4,21 @@ const api = require('../../../config/api.js');
 Page({
     data: {
         detailIndex: 0,
-        previousSty: !1,
-        nextSty: !0,
-        playing: !1,
-        isPlayingMusic: !1,
-        yuyinData: !0,
-        voiceCon: !1,
+        previousSty: false,
+        nextSty: true,
+        playing: false,
+        isPlayingMusic: false,
+        yuyinData: true,
+        voiceCon: false,
         recordTime: 0,
-        startPlay: !1,
+        startPlay: false,
         playingUi: {
             play: "/static/image/recorder.png",
             playing: "/static/image/recorder.gif",
             playbtn: "/static/image/start.png",
             playingbtn: "/static/image/stop.png"
         },
-        completeSty: !1
+        completeSty: false
     },
     onLoad: function(a) {
         wx.showNavigationBarLoading();
@@ -48,7 +48,7 @@ Page({
                 oraleDetail: o
             });
             this.getStorage();
-
+            wx.hideNavigationBarLoading();
         })
     },
     formSubmit(a){
@@ -224,7 +224,7 @@ Page({
     },
     getBackStatus: function() {
         var t = this.data.oraleDetail, e = this.data.detailIndex, o = this;
-        console.log(t[e].oralesound), t[e].oralesound && (a.src = t[e].oralesound, a.stop(),
+        t[e].oralesound && (a.src = t[e].oralesound, a.stop(),
         a.src = t[e].oralesound, a.title = "今日重点", a.onPlay(function() {
             wx.hideNavigationBarLoading(), a.pause();
             var t = setInterval(function() {

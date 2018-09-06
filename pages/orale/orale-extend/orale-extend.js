@@ -2,12 +2,12 @@ var a = getApp(), t = wx.getBackgroundAudioManager(), i = require("../../../util
 
 Page({
     data: {
-        isPlayingMusic: !1,
+        isPlayingMusic: false,
         dqTime: "0:00",
         danmuList:['Welcome！']
     },
     onLoad: function(a) {
-        wx.showNavigationBarLoading();
+        // wx.showNavigationBarLoading();
         this.getOraleData();
     },
     getOraleData: function() {

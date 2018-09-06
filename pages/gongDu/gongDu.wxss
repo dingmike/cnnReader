@@ -184,7 +184,7 @@ button::after {
 
 .punchTime {
     border-bottom: 1px solid #edece8;
-    height:116rpx;
+    height:136rpx;
     width: 90%;
     margin-left: 5%;
 }
@@ -201,8 +201,7 @@ button::after {
     flex-direction: column;
     font-size: 13px;
     vertical-align: middle;
-    padding-top: 10rpx;
-    padding-bottom: 10rpx;
+    padding-top:16rpx;
 }
 
 .punchTime-info {
@@ -219,7 +218,7 @@ button::after {
 .enrollment {
     display: flex;
     flex-direction: column;
-    height: 150rpx;
+    height:164rpx;
     border-bottom: 1px solid #edece8;
     width: 90%;
     margin-left: 5%;
@@ -277,7 +276,7 @@ button::after {
     margin-left: 5%;
     border-radius: 15px 15px 15px 15px;
     color: #fff;
-    background-color: #f4803b;
+    background-color: #58b406;
     font-size: 15px;
     text-align: center;
     line-height: 80rpx;

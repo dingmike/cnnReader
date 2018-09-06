@@ -23,9 +23,7 @@
     </view>
     <scroll-view class="keyWord" scrollY="true" wx:if="{{yuyinData}}">
         <view class="keyWord-item">
-            <text>重点词汇：
-
-{{oraleDetail[detailIndex].keyword}}</text>
+            <text>{{oraleDetail[detailIndex].keyword}}</text>
         </view>
     </scroll-view>
     <block wx:if="{{!datiData}}">

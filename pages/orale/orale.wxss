@@ -32,7 +32,7 @@ page {
     height: 85%;
     position: absolute;
     border-radius: 5px 5px 5px 5px;
-    top: 50rpx;
+    /*top: 50rpx;*/
     vertical-align: middle;
 }
 
@@ -90,10 +90,7 @@ page {
 }
 
 .today-content-jp {
-    font-size: 14px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 20rpx;
+    font-size:14px;
 }
 
 .today-content-ch {

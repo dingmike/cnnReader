@@ -48,6 +48,7 @@
                     <image src="{{userInfo.avatarUrl}}" wx:if="{{avaData}}"></image>
                     <image src="{{item.avatar}}" wx:for="{{studyUser}}" wx:key="{{item}}"></image>
                 </view>
+
             </view>
 
         </wxc-panel>
@@ -75,8 +76,8 @@
         <wxc-panel border="{{false}}">
             <view class="introduce-join">
                 <view class="introduce-join-text">
-                    <text>【21天英语学习达人养成计划】是由@cnn每日更新推出的英语学习计划。在这21天中，
-                        将涉及不同领域的英语学习资料，以及常用英语进行罗列练习。在这21天中，每天10分钟，养成英文学习的好习惯。加油！
+                    <text>【21天英语学习达人养成计划】是由微信公众号(cnn每日更新)推出的英语学习计划。在这21天中，
+                        将涉及不同领域的英语学习资料，以及常用英语进行罗列练习。在这21天中，每天10分钟，养成英语学习好习惯。加油！
                     </text>
                 </view>
                 <view class="introduce-explain">
