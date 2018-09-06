@@ -4,7 +4,6 @@ var user = require('./services/user.js');
 
 App({
     onLaunch: function () {
-debugger
         /* wx.getSetting({
          success: function(t) {
          debugger
@@ -16,7 +15,6 @@ debugger
 
         //获取用户的登录信息
         user.checkLogin().then(res => {
-            debugger
             console.log('app login')
             this.globalData.userInfo = wx.getStorageSync('userInfo');
             this.globalData.token = wx.getStorageSync('token');

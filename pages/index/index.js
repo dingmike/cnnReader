@@ -11,6 +11,7 @@ Page({
         current_poem_url: "",
         share: "",
         uid: "",
+        avaData: false,
         userInfo: '',
         banner: [],
         joinBtn: "继续学习",
