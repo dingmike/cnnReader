@@ -54,13 +54,12 @@ Page({
     formSubmit(a){
         var e = a.detail.formId, o = t.globalData.openid, s = t.globalData.type, i = t.globalData.userInfo;
         let unlocks = t.globalData.single.unlocks;
-        util.request(api.SetCardById, {type: 1, uid: wx.getStorageSync('openid'),formId: e},  'POST').then( res =>{
+        util.request(api.SetCardById, {type: 1, uid: wx.getStorageSync('openid'), formId: e},  'POST').then( res =>{
             if (res.data){
                 wx.redirectTo({
                     url: "/pages/signres/signres"
                 });
             } else {
-
                 let a = "今日打卡成功！";
                 res.data || (a = "今日已经打过卡！", wx.showModal({
                     title: "提示",
@@ -78,6 +77,9 @@ Page({
     },
     completeTap: function() {
         console.log("完成练习");
+    },
+    Recordinterrupt(){
+
     },
     nextOrale: function() {
         wx.stopBackgroundAudio();

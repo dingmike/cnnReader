@@ -17,12 +17,12 @@
       "navigationBarBackgroundColor": "#fff",
       "navigationBarTitleText": "英文能力",
       "navigationBarTextStyle": "black",
-      "enablePullDownRefresh": true
+      "enablePullDownRefresh": false
     },
     "tabBar": {
       "backgroundColor": "#fafafa",
       "borderStyle": "white",
-      "selectedColor": "#b4282d",
+      "selectedColor": "#fec500",
       "color": "#666",
       "list": [
         {

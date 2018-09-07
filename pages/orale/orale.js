@@ -109,7 +109,7 @@ Page({
             isPlayingMusic: false
         });
         t.globalData.days, t.globalData.type;
-        console.log("onshow"), console.log(o.paused), this.playVoice();
+       // this.playVoice();
     },
     onHide: function() {
         wx.stopBackgroundAudio();

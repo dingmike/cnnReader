@@ -124,5 +124,24 @@ Page({
         this.setData({
             current_poem_url: t.currentTarget.dataset.url
         });
-    }
+    },
+/*    onShareAppMessage () {
+        return{
+            title: '英文能力',
+            desc: '一起来学英语！',
+            path: 'pages/index/index',
+            imageUrl: this.data.imagePath,
+            success(res){
+                wx.showShareMenu({
+                    withShareTicket: true
+                })
+            },
+            fail(res){
+
+            },
+            complete(){
+
+            }
+        }
+    }*/
 })
