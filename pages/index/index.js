@@ -80,10 +80,10 @@ Page({
         });
     },
     onShow: function() {
-        var t = app.globalData.type;
+        /*var t = app.globalData.type;
         wx.setNavigationBarTitle({
             title: t + "练习"
-        });
+        });*/
     },
     onReady: function () {
         // 页面渲染完成

@@ -302,10 +302,10 @@ Page({
         });
     },
     onShow: function() {
-        var t = app.globalData.type;
+      /*var t = app.globalData.type;
         wx.setNavigationBarTitle({
-            title: t + "练习"
-        });
+            title: "一起来"
+        });*/
        // this.getIndexData();
         // var o = decodeURIComponent(t.scene);
     },

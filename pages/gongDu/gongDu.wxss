@@ -415,7 +415,7 @@ button::after {
 .introduce-explain {
     color: #f77620;
     font-size: 14px;
-    margin-top: 30rpx;
+    margin-top:22rpx;
     float: right;
     /*margin-right: 20rpx;*/
     text-decoration: underline;

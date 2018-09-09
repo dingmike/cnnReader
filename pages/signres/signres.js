@@ -118,7 +118,7 @@ Page({
                         //"已坚持学习" + n + (a+1) + "天", .2 * this.data.phoneWidth, .9 * this.data.phoneHeight
                         {
                             type: 'text',
-                            text: "我已坚持成功打卡" + a + (totalDay + 1) + "天啦！",
+                            text: "我已坚持" + a +'并且成功打卡'+ (totalDay + 1) + "天啦！",
                             css: [{
                                 left: '140rpx',
                                 width: '280rpx',
