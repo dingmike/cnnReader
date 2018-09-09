@@ -18,7 +18,7 @@ Page({
 
     shareImg() {
         wx.saveImageToPhotosAlbum({
-            filePath: this.imagePath,
+            filePath: this.data.imagePath,
             success: function (t) {
                 wx.showToast({
                     title: "已保存到相册"
@@ -100,8 +100,8 @@ Page({
                                 borderColor: '#000',
                                 width: '240rpx',
                                 height: '240rpx',
-                                right: '20rpx',
-                                bottom: '20rpx',
+                                right: '50rpx',
+                                bottom: '40rpx',
                             },
                         },
                         {
@@ -118,7 +118,7 @@ Page({
                         //"已坚持学习" + n + (a+1) + "天", .2 * this.data.phoneWidth, .9 * this.data.phoneHeight
                         {
                             type: 'text',
-                            text: "我已坚持" + a + (totalDay + 1) + "天，加油！",
+                            text: "我已坚持" + a + (totalDay + 1) + "天啦！",
                             css: [{
                                 left: '140rpx',
                                 width: '280rpx',
