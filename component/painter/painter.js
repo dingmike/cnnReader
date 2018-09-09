@@ -81,7 +81,6 @@ Component({
       screenK = getApp().systemInfo.screenWidth / 750;
 
       this.downloadImages().then((palette) => {
-        debugger
         const { width, height } = palette;
         this.canvasWidthInPx = width.toPx();
         this.canvasHeightInPx = height.toPx();

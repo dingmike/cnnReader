@@ -18,7 +18,7 @@
             </view>-->
         </view>
         <view class="video-content">
-            <video class="video-cell" id="myVideo" src="{{oraleContent.extendsound}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+            <video class="video-cell" custom-cache="{{false}}" id="myVideo" src="{{oraleContent.extendsound}}" binderror="videoErrorCallback" controls></video>
         </view>
         <scroll-view class="text-height" scrollY="true">
             <view class="today-content-jp">

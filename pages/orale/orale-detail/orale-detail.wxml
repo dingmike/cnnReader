@@ -21,6 +21,7 @@
             </view>
         </scroll-view>
     </view>
+
     <scroll-view class="keyWord" scrollY="true" wx:if="{{yuyinData}}">
         <view class="keyWord-item">
             <text>{{oraleDetail[detailIndex].keyword}}</text>
@@ -28,7 +29,7 @@
     </scroll-view>
     <block wx:if="{{!datiData}}">
         <view class="interactive-text" wx:if="{{!voiceCon}}">
-            <text>长按底部录音按钮口语练习</text>
+            <text>长按底部录音按钮练习口语</text>
         </view>
     </block>
     <block wx:if="{{yuyinData}}">
