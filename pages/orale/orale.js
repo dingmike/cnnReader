@@ -101,7 +101,7 @@ Page({
     continueStudy: function() {
         var a = this.data.oraleContent;
         wx.navigateTo({
-            url: "./orale-detail/orale-detail?oid=" + a.id
+            url: "./orale-detail/orale-detail?oid=" + a.genusDays
         });
     },
     onShow: function() {
