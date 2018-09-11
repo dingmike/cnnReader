@@ -107,12 +107,6 @@ Page({
                 wx.setStorageSync("token",res.data.token);
                 app.globalData.openid = res.data.userInfo.weixin_openid;
                 app.globalData.token = res.data.token;
-               /* setTimeout(function(){
-                    /!*wx.redirectTo({
-                        url: "/pages/gongDu/gongDu"
-                    });*!/
-                    wx.navigateBack({ changed: true });
-                },500)*/
                 wx.navigateBack({ changed: true });
             }).catch((err) => {
                 console.log(err)
