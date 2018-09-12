@@ -15,11 +15,9 @@
     </view>
     <view class="main">
         <!--<view class="title">阅读打卡</view>-->
-
         <view class="logoimg">
             <!--<image src="{{bgimg}}"></image>-->
         </view>
-
         <wxc-panel border="{{true}}" margin="{{false}}" wx:if="{{setTimeSty}}">
             <view class="punchTime punchTime-set-info content">
                 <view class="punchTime-info">
@@ -74,12 +72,11 @@
             <view class="introduce-join">
                 <view class="introduce-join-text" bindtap="bindExplain">
                     <text>【21天英语学习达人养成计划】是由微信公众号(cnn每日更新)推出的英语学习计划。在这21天中，
-                        将涉及不同领域的英语学习资料，以及常用英语进行罗列练习。在这21天中，每天10分钟，养成英语学习好习惯。加油！
+                        将涉及不同领域的英语学习资料包括听力训练，口语跟读练习，词汇记忆和语法理解，以及拓展训练。在这21天中，每天坚持10分钟，养成英语学习好习惯，提高英文能力！
                     </text>
                 </view>
                 <view class="introduce-explain">
-                    <text bindtap="bindExplain">活动详情</text>
-
+                    <text bindtap="bindExplain" style="font-size:14px;color:#f77620;">了解活动详情</text>
                 </view>
                 <form>
                     <view class="introduce-join-btn">
@@ -96,13 +93,9 @@
         <view class="back"></view>
 
         <wxc-panel border="{{false}}" wx:if="{{single.startStatus==1}}">
-
-          <!--  <view class="introduce">
-                知识点回顾
-            </view>-->
             <view class="History">
                 <view class="History-text">
-                    <text>点击日期按钮可回看当天内容</text>
+                    <text style="font-size:14px;">点击按钮可回看当日内容</text>
                 </view>
                 <form bindsubmit="formSubmit" reportSubmit="true">
                     <view class="History-icon">
@@ -113,10 +106,7 @@
                     </view>
                 </form>
             </view>
-
-
         </wxc-panel>
-
         <view class="bottom-contact">
             <button></button>
         </view>

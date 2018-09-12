@@ -43,7 +43,7 @@
                         <!--<text>{{duration}}</text>-->
                         <view class='slid'>
 
-                            <slider bindchange="sliderChange" block-size="12px" step="2" value="{{offset}}" max="{{max}}" class="slider" block-color="#8bc34a" selected-color="#ff5e5e" />
+                            <slider bindchange="sliderChange" block-size="20" step="2" value="{{offset}}" max="{{max}}" class="slider" block-color="#8bc34a" selected-color="#ff5e5e" />
 
                         </view>
                         <text>{{starttime}}</text>

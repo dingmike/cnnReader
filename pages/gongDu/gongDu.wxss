@@ -211,8 +211,7 @@ button::after {
     text-align:center;
     line-height:60rpx;
     vertical-align:middle;
-    margin-top:22rpx;
-
+    padding:18px 0;
 }
 
 .enrollment {
@@ -415,10 +414,8 @@ button::after {
 .introduce-explain {
     color: #f77620;
     font-size: 14px;
-    margin-top:22rpx;
+    margin-top:20rpx;
     float: right;
-    /*margin-right: 20rpx;*/
-    text-decoration: underline;
 }
 .card-time-box{
     margin-bottom: 4rpx;

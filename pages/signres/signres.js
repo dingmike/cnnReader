@@ -100,7 +100,7 @@ Page({
                                 borderColor: '#000',
                                 width: '240rpx',
                                 height: '240rpx',
-                                right: '50rpx',
+                                right: '64rpx',
                                 bottom: '40rpx',
                             },
                         },

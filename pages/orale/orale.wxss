@@ -44,13 +44,13 @@ page {
 }
 
 .text-height {
-    height: 72%;
+    height: 78%;
     padding-bottom: 20rpx;
     line-height: 2;
 }
 
 .top {
-    height: 22%;
+    height: 19%;
 }
 
 .today-content-sound {
@@ -113,7 +113,7 @@ page {
 }
 
 .audiosBox{
-    height:58px;
+    height:46px;
     display:flex;
     justify-content:center;
     /*background:#FFA000;*/
