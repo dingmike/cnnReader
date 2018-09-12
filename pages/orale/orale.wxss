@@ -82,6 +82,7 @@ page {
     font-size: 13px;
     line-height: 80rpx;
     margin-right: 20rpx;
+    width:84px;
 }
 
 .today-sound-process {
@@ -100,4 +101,61 @@ page {
     margin-top: 20rpx;
     padding-bottom: 20rpx;
     color: #c0c0bf;
+}
+
+
+
+/*new add开关背景颜色 */
+
+.audio-big-box{
+    width:95%;
+    margin:0 auto;
+}
+
+.audiosBox{
+    height:58px;
+    display:flex;
+    justify-content:center;
+    /*background:#FFA000;*/
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius: 30px;
+}
+
+/*按钮大小 */
+
+.audioOpen{
+    /*border: 2px solid #FFFFFF;*/
+    /*border-radius: 50%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-right: 10px;*/
+}
+image{
+    width:76rpx;
+    height:76rpx;
+}
+/*.image2{
+    margin-left: 10%;
+}*/
+
+/*进度条长度 */
+
+.slid{
+    width:214px;
+}
+
+/*横向布局 */
+
+.progress{
+
+    display: flex;
+
+    align-items: center;
+
+    color: #FFFFFF;
+
+    font-size: 26rpx;
+
 }

@@ -171,7 +171,8 @@ Page({
     },
     getStorage: function() {
         var t = this.data.oid, a = this.data.detailIndex, e = this.data.oraleDetail;
-        this.getBackStatus(), this.setData({
+        // this.getBackStatus(); // 暂时不需要音频
+        this.setData({
             startPlay: false,
             isPlayingMusic: false,
             selectedAns: false

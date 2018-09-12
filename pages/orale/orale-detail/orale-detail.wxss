@@ -19,11 +19,11 @@ page {
 }
 
 .dati-content {
-    width: 90%;
-    margin: 40rpx auto;
-    padding: 30rpx;
-    background-color: #eee;
-    color: black;
+    width:90%;
+    margin:30rpx auto;
+    padding:24rpx;
+    background-color:#eee;
+    color:black;
 }
 
 .today-sound {

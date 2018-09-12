@@ -19,7 +19,7 @@ Page({
     },
     playVoice: function() {
         var a = this,n = this.data.oraleContent;
-        t.src = n.extendsound, t.title = "扩展内容", t.onPlay(function() {
+        t.src = n.extendSound, t.title = "扩展内容", t.onPlay(function() {
             wx.hideNavigationBarLoading(), t.pause();
             var n = setInterval(function() {
                 var o = t.duration;

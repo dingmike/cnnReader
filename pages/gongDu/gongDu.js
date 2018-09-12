@@ -354,5 +354,8 @@ Page({
         this.setData({
             current_poem_url: t.currentTarget.dataset.url
         });
+    },
+    formSubmit(){
+        // 提交formID
     }
 });
