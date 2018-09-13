@@ -34,7 +34,7 @@ App({
         url: "https://riyubao.net/oralproject/public/index.php/",
         //new
         openid: "",
-        type: "21天口语达人养成计划",
+        type: "21天英语达人养成计划",
         img: "/images/item/ly.png",
         bgimg: "https://riyubao.net/oralproject/public/datas/item/b2.jpg",
         coimg: "/images/coimg/ly.jpg",
