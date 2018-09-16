@@ -6,7 +6,6 @@
   </button>
   <view style="height:20rpx;background: #eee;width:100%;"></view>
   <view class="my-item" style='background:none;display:flex;flex-direction:column;height:auto;'></view>
-
   <!--new style-->
   <view class="cellView bottom">
     <navigator url="/pages/ucenter/my-card/my-card" class="cell item-flex item-justify-center" hoverClass="none">
