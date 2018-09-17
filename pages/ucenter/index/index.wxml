@@ -6,92 +6,6 @@
   </button>
   <view style="height:20rpx;background: #eee;width:100%;"></view>
   <view class="my-item" style='background:none;display:flex;flex-direction:column;height:auto;'></view>
-  
-<!--  <view class="user-menu">
-
-    <view class="item">
-      <navigator url="/pages/ucenter/my-card/my-card" class="a">
-        <text class="icon daka"></text>
-        <text class="txt">打卡记录</text>
-      </navigator>
-    </view>
-    <view class="item">
-      <navigator url="/pages/ucenter/order/order" class="a">
-        <text class="icon order"></text>
-        <text class="txt">我的订单</text>
-      </navigator>
-    </view>
-    <view class="item no-border">
-      <navigator url="/pages/ucenter/coupon/coupon" class="a">
-        <text class="icon coupon"></text>
-        <text class="txt">优惠券</text>
-      </navigator>
-    </view>
-&lt;!&ndash;    <view class="item no-border">
-      <navigator url="url" class="a">
-        <text class="icon gift"></text>
-        <text class="txt">礼品卡</text>
-      </navigator>
-    </view>&ndash;&gt;
-    <view class="item">
-      <navigator url="/pages/ucenter/collect/collect" class="a">
-        <text class="icon collect"></text>
-        <text class="txt">我的收藏</text>
-      </navigator>
-    </view>
-    <view class="item">
-      <navigator url="/pages/ucenter/footprint/footprint" class="a">
-        <text class="icon footprint"></text>
-        <text class="txt">我的足迹</text>
-      </navigator>
-    </view>
-   &lt;!&ndash; <view class="item no-border">
-      <navigator url="url" class="a">
-        <text class="icon kefu"></text>
-        <text class="txt">会员福利</text>
-      </navigator>
-    </view>&ndash;&gt;
-    <view class="item no-border">
-      <navigator url="../address/address" class="a">
-        <text class="icon address"></text>
-        <text class="txt">地址管理</text>
-      </navigator>
-    </view>
-   &lt;!&ndash; <view class="item">
-      <navigator url="url" class="a">
-        <text class="icon security"></text>
-        <text class="txt">账号安全</text>
-      </navigator>
-    </view>&ndash;&gt;
-
-    <view class="item item-bottom">
-      <navigator url="url" class="a">
-        <text class="icon help"></text>
-        <text class="txt">帮助中心</text>
-      </navigator>
-    </view>
-    <view class="item item-bottom">
-      <navigator url="/pages/ucenter/feedback/feedback" class="a">
-        <text class="icon feedback"></text>
-        <text class="txt">意见反馈</text>
-      </navigator>
-    </view>
-    <button class='service' open-type="contact">
-      <view class="item no-border item-bottom">
-        <navigator url="url" class="a">
-          <text class="icon kefu"></text>
-          <text class="txt">联系我们</text>
-        </navigator>
-      </view>
-    </button>
-    &lt;!&ndash;<view class="item item-bottom" v-if="hasMobile != ''">
-      <navigator url="/pages/auth/mobile/mobile" class="a">
-        <text class="icon phone"></text>
-        <text class="txt">绑定手机</text>
-      </navigator>
-    </view>&ndash;&gt;
-  </view>-->
-
   <!--new style-->
   <view class="cellView bottom">
     <navigator url="/pages/ucenter/my-card/my-card" class="cell item-flex item-justify-center" hoverClass="none">
@@ -106,7 +20,7 @@
     <button class="cell item-flex item-justify-center contact" hoverClass="none" open-type="contact">
       <image src="/static/image/icon/kefu_icon.png"></image>
       <view class="box-flex-1">
-        <text>反馈留言</text>
+        <text>留言反馈加群</text>
       </view>
       <view class="arrow"></view>
     </button>
