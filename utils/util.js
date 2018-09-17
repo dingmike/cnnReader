@@ -157,20 +157,20 @@ function request(url, data = {}, method = "GET") {
             success: function (res) {
                 console.log("success");
                 if (res.statusCode == 200) {
-
-                    if (res.data.errno == 401) {
+                    resolve(res.data);
+                    /*if (res.data.errno == 401) {
                         //需要登录后才可以操作
                         wx.removeStorageSync("userInfo");
                         wx.removeStorageSync("openid");
                         wx.removeStorageSync("token");
-                   /*     wx.navigateTo({
+                   /!*     wx.navigateTo({
                             url: '/pages/firstAuth/firstAuth'
-                        });*/
+                        });*!/
                         wx.redirectTo({
                             url: '/pages/firstAuth/firstAuth'
                         });
 
-                        /*wx.showModal({
+                        /!*wx.showModal({
                             title: '',
                             content: '请先登录',
                             success: function (res) {
@@ -182,10 +182,10 @@ function request(url, data = {}, method = "GET") {
                                     });
                                 }
                             }
-                        });*/
+                        });*!/
                     } else {
                         resolve(res.data);
-                    }
+                    }*/
                 } else {
                     reject(res.errMsg);
                 }

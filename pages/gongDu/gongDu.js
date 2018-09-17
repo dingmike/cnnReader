@@ -48,26 +48,18 @@ Page({
         }
     },
 
-    onLoad(t) {
-        var t = this;
-        // 获取首页数据
-        this.getIndexData();
-        this.data.type = app.globalData.type;
-        wx.showNavigationBarLoading();
-        var e = app.globalData.openid;
-        this.setData({
-            openid: e,
-            bgimg: app.globalData.bgimg
+    onLoad() {
+        // 判断是否登录
+        user.checkLogin().then(res => {
+            //已经登录
+            return
+        }).catch((err) => {
+            // 未登录
+            wx.navigateTo({
+                url: "/pages/firstAuth/firstAuth"
+            })
         });
-        t.getLearnInfo();
-        // t.addUser();
-        t.getLastDay();
-        t.getOneCard();
-        if(new Date().getHours() >= 10 ){
-            this.setData({
-                joinBtn: "您已经错过规定打卡时间 点击学习"
-            });
-        }
+
     },
 
     getOneCard(){
@@ -302,12 +294,25 @@ Page({
         });
     },
     onShow: function() {
-      /*var t = app.globalData.type;
-        wx.setNavigationBarTitle({
-            title: "一起来"
-        });*/
-       // this.getIndexData();
-        // var o = decodeURIComponent(t.scene);
+
+        // 获取首页数据
+        this.getIndexData();
+        this.data.type = app.globalData.type;
+        wx.showNavigationBarLoading();
+        var e = app.globalData.openid;
+        this.setData({
+            openid: e
+        });
+        this.getLearnInfo();
+        // t.addUser();
+        this.getLastDay();
+        this.getOneCard();
+        if(new Date().getHours() >= 10 ){
+            this.setData({
+                joinBtn: "您已经错过规定打卡时间 点击学习"
+            });
+        }
+
     },
     onReady: function () {
         // 页面渲染完成
@@ -329,7 +334,8 @@ Page({
                     banner: res.data.banner,
                     learnTypeId: res.data.userLearnList[0].learnTypeId
                 });*/
-
+                    // 计划详情图文
+                    app.globalData.detailImg = res.data.learnFilePics;
                 let e = res.data.userLearnList, o = res.data.userListTotal;
                 o > 200 ? (o = 200, that.setData({
                     banner: res.data.banner,

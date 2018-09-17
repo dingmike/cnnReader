@@ -102,7 +102,7 @@ Page({
                     userInfo: res.data.userInfo
                 });
                 app.globalData.userInfo = res.data.userInfo;
-                wx.setStorageSync('userInfo', res.data.userInfo);
+                // wx.setStorageSync('userInfo', res.data.userInfo);
                 wx.setStorageSync("openid",res.data.userInfo.weixin_openid);
                 wx.setStorageSync("token",res.data.token);
                 app.globalData.openid = res.data.userInfo.weixin_openid;
@@ -166,6 +166,7 @@ Page({
         })
         wx.getUserInfo({
             success:  (res)=> {
+                debugger
                 if( typeResponse.detail.authSetting["scope.userInfo"]){
                     user.loginByWeixin(res).then(res => {
                         this.setData({

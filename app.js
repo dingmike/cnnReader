@@ -12,7 +12,6 @@ App({
          });
          }
          });*/
-
         //获取用户的登录信息
         user.checkLogin().then(res => {
             console.log('app login')
@@ -34,11 +33,11 @@ App({
         url: "https://riyubao.net/oralproject/public/index.php/",
         //new
         openid: "",
-        type: "21天英语达人养成计划",
+        type: "21天英语学习达人养成计划",
         img: "/images/item/ly.png",
-        bgimg: "https://riyubao.net/oralproject/public/datas/item/b2.jpg",
+        bgimg: "",
         coimg: "/images/coimg/ly.jpg",
-        detailImg: "https://riyubao.net/oralproject/public/datas/item/lyDetail2.jpg",
+        detailImg: [],
         ifFree: "1",
         days: 0,
         //new

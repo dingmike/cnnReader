@@ -100,7 +100,7 @@ Page({
         // learnTypeId  学习类型ID
         util.request(api.CnnIndexUrl, {learnTypeId: 1}).then(function (res) {
             if (res.errno === 0) {
-
+                res.data.learnFilePics
                 let e = res.data.userLearnList, o = res.data.userListTotal;
                 o > 200 ? (o = 200, that.setData({
                     banner: res.data.banner,
