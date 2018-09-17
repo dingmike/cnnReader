@@ -217,7 +217,7 @@ button::after {
 .enrollment {
     display: flex;
     flex-direction: column;
-    height:164rpx;
+    height:162rpx;
     border-bottom: 1px solid #edece8;
     width: 90%;
     margin-left: 5%;

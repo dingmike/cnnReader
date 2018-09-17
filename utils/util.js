@@ -203,8 +203,10 @@ function request(url, data = {}, method = "GET") {
  */
 function checkSession() {
     return new Promise(function (resolve, reject) {
+        debugger
         wx.checkSession({
             success: function () {
+                debugger
                 resolve(true);
             },
             fail: function () {
