@@ -212,21 +212,7 @@ Page({
                         });
                         o.updateSuccess();
                         wx.hideLoading();
-
-                        setTimeout(function() {
-                            wx.reLaunch({
-                                url: "/pages/submitInfo/submitInfo?orderId=" +  o.data.orderSn
-                            })
-                        }, 400);
                     }
-
-                   /* "requestPayment:ok" == ress.errMsg && wx.showToast({
-                        title: "支付成功"
-                    }), o.setData({
-                        showModalStatus: false
-                    }),o.updateSuccess(), wx.hideLoading(), wx.reLaunch({
-                        url: "/pages/submitInfo/submitInfo?orderId=" +  o.data.orderSn
-                    });*/
 
                     //o.updateSucces(); // 暂时用来查询微信支付成功
                 }).catch(ress => {
@@ -248,6 +234,11 @@ Page({
     // 暂时使用查看是否支付成功
     updateSuccess() {
         util.request(api.OrderGongDuQuery, { orderId: this.data.orderSn}).then(res => {
+            if(res.errno==0){
+                wx.reLaunch({
+                    url: "/pages/submitInfo/submitInfo"
+                })
+            }
         })
     },
     reviewHistory: function(t) {
