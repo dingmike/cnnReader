@@ -50,7 +50,7 @@ Page({
 
     onLoad() {
         // 判断是否登录
-        user.checkLogin().then(res => {
+      /*  user.checkLogin().then(res => {
             //已经登录
             return
         }).catch((err) => {
@@ -58,7 +58,25 @@ Page({
             wx.navigateTo({
                 url: "/pages/firstAuth/firstAuth"
             })
+        });*/
+
+        // 获取首页数据
+        this.getIndexData();
+        this.data.type = app.globalData.type;
+        wx.showNavigationBarLoading();
+        var e = app.globalData.openid;
+        this.setData({
+            openid: e
         });
+        this.getLearnInfo();
+        // t.addUser();
+        this.getLastDay();
+        this.getOneCard();
+        if(new Date().getHours() >= 10 ){
+            this.setData({
+                joinBtn: "您已经错过规定打卡时间 点击学习"
+            });
+        }
 
     },
 
@@ -295,23 +313,7 @@ Page({
     },
     onShow: function() {
 
-        // 获取首页数据
-        this.getIndexData();
-        this.data.type = app.globalData.type;
-        wx.showNavigationBarLoading();
-        var e = app.globalData.openid;
-        this.setData({
-            openid: e
-        });
-        this.getLearnInfo();
-        // t.addUser();
-        this.getLastDay();
-        this.getOneCard();
-        if(new Date().getHours() >= 10 ){
-            this.setData({
-                joinBtn: "您已经错过规定打卡时间 点击学习"
-            });
-        }
+
 
     },
     onReady: function () {

@@ -94,7 +94,7 @@ Page({
     bindGetUserInfo(e) {
         this.setData({
             userData: e.detail
-        })
+        });
         if (e.detail.userInfo){
             //用户按了允许授权按钮
             user.loginByWeixin(e.detail).then(res => {
@@ -166,7 +166,6 @@ Page({
         })
         wx.getUserInfo({
             success:  (res)=> {
-                debugger
                 if( typeResponse.detail.authSetting["scope.userInfo"]){
                     user.loginByWeixin(res).then(res => {
                         this.setData({
