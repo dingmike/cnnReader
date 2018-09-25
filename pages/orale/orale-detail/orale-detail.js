@@ -61,7 +61,33 @@ Page({
                 });
             } else {
                 let a = "今日打卡成功！";
-                res.data || (a = "今日已经打过卡！", wx.showModal({
+
+                if(res.data==0){
+                    (a = "今日已经打过卡！", wx.showModal({
+                        title: "提示",
+                        content: a,
+                        showCancel: false,
+                        success: function(t) {
+                            t.confirm && wx.redirectTo({
+                                url: "/pages/signres/signres"
+                            });
+                        }
+                    }));
+                }else if(res.data==21){
+                    (a = "您已完成"+t.globalData.type+'!', wx.showModal({
+                        title: "提示",
+                        content: a,
+                        showCancel: false,
+                        confirmText:'查看记录',
+                        success: function(t) {
+                            t.confirm && wx.redirectTo({
+                                url: "/pages/ucenter/my-card/my-card"
+                            });
+                        }
+                    }));
+                }
+
+               /* res.data || (a = "今日已经打过卡！", wx.showModal({
                     title: "提示",
                     content: a,
                     showCancel: false,
@@ -70,7 +96,7 @@ Page({
                             url: "/pages/signres/signres"
                         });
                     }
-                }));
+                }));*/
             }
 
         })
