@@ -29,6 +29,7 @@ Page({
             o.oraleSound = o.oraleSound.replace(/\\/g, "/");
             o.extendSound = o.extendSound.replace(/\\/g, "/");
             t.globalData.oraleCountent = o;
+            t.globalData.bgimg = o.scenceImg;
             e.setData({
                 oraleContent: o,
                 src: o.oraleSound

@@ -80,7 +80,8 @@ Page({
                 template: {
                     width: aThis.data.phoneWidth * 2 + 'rpx',
                     height: aThis.data.phoneHeight * 2 + 'rpx',
-                    background: '/static/image/logos/123.jpg',
+                    // background: '/static/image/logos/123.jpg',
+                    background: e.globalData.bgimg,
                     views: [
                        /* {
                             type: 'image',

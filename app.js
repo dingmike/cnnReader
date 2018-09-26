@@ -35,7 +35,7 @@ App({
         openid: "",
         type: "21天英语学习达人养成计划",
         img: "/images/item/ly.png",
-        bgimg: "",
+        bgimg: "/static/image/logos/123.jpg",
         coimg: "/images/coimg/ly.jpg",
         detailImg: [],
         ifFree: "1",

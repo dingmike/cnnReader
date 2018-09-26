@@ -52,17 +52,13 @@ Page({
         })
     },
     formSubmit(a){
+        wx.showNavigationBarLoading();
         var e = a.detail.formId, o = t.globalData.openid, s = t.globalData.type, i = t.globalData.userInfo;
         let unlocks = t.globalData.single.unlocks;
         util.request(api.SetCardById, {type: 1, uid: wx.getStorageSync('openid'), formId: e},  'POST').then( res =>{
-            if (res.data){
-                wx.redirectTo({
-                    url: "/pages/signres/signres"
-                });
-            } else {
+                wx.hideNavigationBarLoading();
                 let a = "今日打卡成功！";
-
-                if(res.data==0){
+                if(res.data===0){
                     (a = "今日已经打过卡！", wx.showModal({
                         title: "提示",
                         content: a,
@@ -73,7 +69,7 @@ Page({
                             });
                         }
                     }));
-                }else if(res.data==21){
+                }else if(res.data===21){
                     (a = "您已完成"+t.globalData.type+'!', wx.showModal({
                         title: "提示",
                         content: a,
@@ -85,6 +81,10 @@ Page({
                             });
                         }
                     }));
+                }else{
+                    wx.redirectTo({
+                        url: "/pages/signres/signres"
+                    });
                 }
 
                /* res.data || (a = "今日已经打过卡！", wx.showModal({
@@ -97,7 +97,7 @@ Page({
                         });
                     }
                 }));*/
-            }
+
 
         })
     },
