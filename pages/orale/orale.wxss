@@ -47,6 +47,7 @@ page {
     height: 78%;
     padding-bottom: 20rpx;
     line-height: 2;
+    padding-left:6px;
 }
 
 .top {
