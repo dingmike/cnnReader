@@ -186,7 +186,7 @@ button::after {
     border-bottom: 1px solid #edece8;
     height:136rpx;
     width: 90%;
-    margin-left: 5%;
+    margin-left:3%;
 }
 
 .punchTime-set-info {
@@ -243,7 +243,7 @@ button::after {
 }
 
 .introduce-join-text {
-    padding-top: 20rpx;
+    padding-top: 22px;
     font-size: 14px;
     color: #4d4d4d;
     line-height: 1.5;
@@ -255,18 +255,19 @@ button::after {
 }
 
 .introduce-join-pay button {
-    width: 90%;
-    border: 1px solid #58b406;
-    height: 80rpx;
-    margin-left: 5%;
-    margin-top: 100rpx;
-    border-radius: 15px 15px 15px 15px;
-    color: #fff;
-    background-color: #58b406;
-    font-size: 14px;
-    text-align: center;
-    line-height: 80rpx;
-    margin-bottom: 30rpx;
+    width:90%;
+    border:1px solid #58b406;
+    height:80rpx;
+    /*margin-left:5%;*/
+    margin-top:86rpx;
+    border-radius:15px 15px 15px 15px;
+    color:#fff;
+    background-color:#58b406;
+    font-size:14px;
+    text-align:center;
+    line-height:80rpx;
+    margin-bottom:30rpx;
+
 }
 
 .introduce-join-Continue {
@@ -284,7 +285,6 @@ button::after {
 
 .back {
     background-color: #edece8;
-    height: 40rpx;
 }
 
 .introduce {
