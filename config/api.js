@@ -18,7 +18,6 @@ module.exports = {
     UserSubmitPhone: NewApiRootUrl + 'user/submitPhone', // 绑定微信和手机号
 
 
-
     IndexUrlNewGoods: NewApiRootUrl + 'index/newGoods', //新产品
     IndexUrlHotGoods: NewApiRootUrl + 'index/hotGoods', //首页数据接口
     IndexUrlTopic: NewApiRootUrl + 'index/topic', //首页数据接口
